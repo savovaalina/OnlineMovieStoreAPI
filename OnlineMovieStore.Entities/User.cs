@@ -1,28 +1,46 @@
 ﻿namespace OnlineMovieStore.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    public class User
-    {
-        public int UserId { get; set; }
+	using System;
+	using System.ComponentModel.DataAnnotations;
 
-        public int UserAge { get; set; } 
-        public string UserName { get; set; } = null!;
+	public class User
+	{
+		public Guid Id { get; set; }
 
-        public string UserEmail { get; set; }
+		[StringLength(250)]
+		public string UserName { get; set; } = null!;
 
-       public string? UserCountry { get; set; }
+		[StringLength(350)]
+		public string UserEmail { get; set; }
 
-        public string UserCity { get; set; }
+		[StringLength(350)]
+		public string? UserAdress { get; set; }
 
-        public string? UserAdress { get; set; }
+		[StringLength(150)]
+		public string? UserCountry { get; set; }
+
+		[StringLength(150)]
+		public string UserCity { get; set; }
+
+		public byte[] PasswordHash { get; set; } = null!; //vaka e poso se enkriptira vo arrey od byte
+
+		public byte[] PasswordSalt { get; set; } = null!;//random generiranje na brojce koi sto ke pomaga pri enkripcijata na PasswordHash
+
+		[StringLength(250)]
+		public string? Phone { get; set; }
+
+		[StringLength(650)]
+		public string? Description {get; set;}
+
+		public DateTime UserCreated { get; set; }
+
+		public bool IsAdmin { get; set; }
+
+		public int UserAge { get; set; } // dodadeno od nasha strana
 
 
 
-        //TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
+		//TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
 
-    }
+	}
 }

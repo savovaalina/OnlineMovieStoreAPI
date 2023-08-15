@@ -13,16 +13,19 @@ namespace OnlineMovieStore.Entities
 
         public string LoginUsername { get; set; } = null!;
 
-
-        public string LoginUsernameee { get; set; } //proba
-        public byte[] PasswordHash { get; set; } = null!; //vaka e poso se enkriptira vo arrey od byte
-
-
-        public byte[] PasswordSalt { get; set; } = null!;//random generiranje na brojce koi sto ke pomaga pri enkripcijata na PasswordHash
-
-        //public string LoginPassword { get; set; } = null!;
-
-        //TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
-
-    }
+    } 
 }
+
+//vaka e poso se enkriptira vo arrey od byte
+
+ /* public byte[] PasswordHash { get; set; } = null!; 
+ public byte[] PasswordSalt { get; set; } = null!; */
+
+ //random generiranje na brojce koi sto ke pomaga pri enkripcijata na PasswordHash
+
+
+
+ //public string LoginPassword { get; set; } = null!;
+
+ //TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
+

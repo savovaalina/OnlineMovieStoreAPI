@@ -1,36 +1,68 @@
 ﻿namespace OnlineMovieStore.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    public class Movie
-    {
-        public int MovieId { get; set; }
+	using System;
+	using System.Collections.Generic;
+	using System.ComponentModel.DataAnnotations;
 
-        public string MovieName { get; set; } = null!;
+	public class Movie
+	{
+		[Key]
+		public int MovieId { get; set; }
 
-        public int MovieHour { get; set; } 
+		#region MovieDetails
 
-        public int MovieRating { get; set; }
+		[StringLength(250)]
+		public string MovieName { get; set; } = null!;
 
-        public string MovieDirector { get; set; }
+		public string MovePart { get; set; }
+		public int MovieLength { get; set; }
 
-        public string MovieProducer { get; set; }
+		public int MovieRating { get; set; }
 
-        public string MovieActors { get; set; }
+		[StringLength(100)]
+		public string? MovieCountry { get; set; }
+		public DateTime MovieYearOfRelease { get; set; }  // godina na izdavenje
 
-        public string? MovieDescription { get; set; }
+		[StringLength(100)]
+		public string MovieDirector { get; set; }
 
-        public string? MovieLanguage { get; set; }
+		[StringLength(100)]
+		public string MovieProducer { get; set; }
 
-        public bool IsPopular { get; set; } // top 10 popularni movie (moze i da go staime a moze i ne)
+		[StringLength(250)]
+		public string MovieActors { get; set; }
+		
+		[StringLength(450)]
+		public string? MovieDescription { get; set; }
+		
+		[StringLength(100)]
+		public string? MovieLanguage { get; set; }
+		#endregion
 
-        public int YearOfRelease { get; set }  // godina na izdavenje
+		#region Category Details
+		public string? CategoryGenre{ get; set; }
 
-        //TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
+		public int CategoryId { get; set; }
 
-       
-    }
+		public MovieCategory? Category { get; set; }
+		#endregion
+
+		#region Sales Details
+
+		public double Price { get; set; }
+		public int SoldMovies { get; set; }
+		public int SoldShows { get; set; }
+
+		public int SoldParts { get; set; }
+
+		#endregion
+
+
+		public bool IsPopular { get; set; } // top 10 popularni movie (moze i da go staime a moze i ne)
+
+
+		//TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
+		public virtual ICollection<PhotoMovie>? Photos { get; set; }
+
+	}
 }

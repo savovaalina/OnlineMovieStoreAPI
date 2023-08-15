@@ -10,6 +10,6 @@ namespace OnlineMovieStore.Entities
     {
         public int BookmarkId { get; set; } // da zacuvas podocna da gledas neso kao Watch leter
 
-        public int MovieID { get; set; } //proba
+        public string WatchLater { get; set; }
     }
 }

@@ -1,22 +1,22 @@
 ﻿namespace OnlineMovieStore.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
+	using System.ComponentModel.DataAnnotations;
+
     public class MovieCategory
     {
+        [Key]
+        public int Id { get; set; }
 
-        public int CategoryId { get; set; }
-        public string CategoryType { get; set; } = null!;
+        [StringLength (90)]
+        public string Genre { get; set; } = null!; //zhanr
 
-        public string LastUpdate { get; set; }
-
-
-        //TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
-
+        public string LastUpdate { get; set; } //najnov dodaden film
 
 
-    }
+		//TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna
+		public virtual ICollection<Movie>? Movie { get; set; }
+
+
+	}
 }
