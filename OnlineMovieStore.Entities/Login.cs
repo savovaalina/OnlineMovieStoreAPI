@@ -14,6 +14,7 @@ namespace OnlineMovieStore.Entities
         public string LoginUsername { get; set; } = null!;
 
 
+        public string LoginUsernameee { get; set; } //proba
         public byte[] PasswordHash { get; set; } = null!; //vaka e poso se enkriptira vo arrey od byte
 
 
