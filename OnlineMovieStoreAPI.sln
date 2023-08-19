@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStoreAPI", "OnlineMovieStoreAPI\OnlineMovieStoreAPI.csproj", "{6CBA8CBA-6704-45FD-AA20-FED0B6E69558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMovieStoreAPI", "OnlineMovieStoreAPI\OnlineMovieStoreAPI.csproj", "{6CBA8CBA-6704-45FD-AA20-FED0B6E69558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Entities", "OnlineMovieStore.Entities\OnlineMovieStore.Entities.csproj", "{6740A3F8-E37B-4DC8-9710-4A3149640549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMovieStore.Entities", "OnlineMovieStore.Entities\OnlineMovieStore.Entities.csproj", "{6740A3F8-E37B-4DC8-9710-4A3149640549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Data", "OnlineMovieStore.Data\OnlineMovieStore.Data.csproj", "{470961D1-2074-4FF1-B5CF-0C3B91481137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Repositories", "OnlineMovieStore.Repositories\OnlineMovieStore.Repositories.csproj", "{4E2A30DC-CC53-4BBC-A2FB-2F70A83EBAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Repository.Interfaces", "OnlineMovieStore.Repository.Interfaces\OnlineMovieStore.Repository.Interfaces.csproj", "{97BB8A6F-C443-41CC-B696-1AC6FCB8C5D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Service.Interfaces", "OnlineMovieStore.Service.Interfaces\OnlineMovieStore.Service.Interfaces.csproj", "{2117D696-032D-44BA-B1CC-AEB0427458F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMovieStore.Services", "OnlineMovieStore.Services\OnlineMovieStore.Services.csproj", "{6787F7DE-585C-4606-88A0-9D8E78DAD60F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +31,26 @@ Global
 		{6740A3F8-E37B-4DC8-9710-4A3149640549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6740A3F8-E37B-4DC8-9710-4A3149640549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6740A3F8-E37B-4DC8-9710-4A3149640549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470961D1-2074-4FF1-B5CF-0C3B91481137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470961D1-2074-4FF1-B5CF-0C3B91481137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470961D1-2074-4FF1-B5CF-0C3B91481137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470961D1-2074-4FF1-B5CF-0C3B91481137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E2A30DC-CC53-4BBC-A2FB-2F70A83EBAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2A30DC-CC53-4BBC-A2FB-2F70A83EBAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2A30DC-CC53-4BBC-A2FB-2F70A83EBAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2A30DC-CC53-4BBC-A2FB-2F70A83EBAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BB8A6F-C443-41CC-B696-1AC6FCB8C5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BB8A6F-C443-41CC-B696-1AC6FCB8C5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BB8A6F-C443-41CC-B696-1AC6FCB8C5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BB8A6F-C443-41CC-B696-1AC6FCB8C5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2117D696-032D-44BA-B1CC-AEB0427458F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2117D696-032D-44BA-B1CC-AEB0427458F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2117D696-032D-44BA-B1CC-AEB0427458F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2117D696-032D-44BA-B1CC-AEB0427458F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6787F7DE-585C-4606-88A0-9D8E78DAD60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6787F7DE-585C-4606-88A0-9D8E78DAD60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6787F7DE-585C-4606-88A0-9D8E78DAD60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6787F7DE-585C-4606-88A0-9D8E78DAD60F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

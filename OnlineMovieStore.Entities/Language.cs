@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OnlineMovieStore.Entities
 {
-    public class Language
+    public class WebLanguage
     {
 
-        public int LanguageId { get; set; }
+        public int WebLanguageMovieId { get; set; }
 
-        public string LanguageName { get; set; }
+        public string? WebLanguageMovieName { get; set; }
 
 
     }

@@ -8,8 +8,8 @@ namespace OnlineMovieStore.Entities
 {
     public class BookmarkMovie
     {
-        public int BookmarkId { get; set; } // da zacuvas podocna da gledas neso kao Watch leter
+        public int BookmarkMovieId { get; set; } // da zacuvas podocna da gledas neso kao Watch leter
 
-
+        public string? WatchLater { get; set; }
     }
 }
