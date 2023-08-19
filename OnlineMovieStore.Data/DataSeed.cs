@@ -12,7 +12,7 @@ namespace OnlineMovieStore.Data
 		builder.Entity<User>().HasData(
             new User{
                 MovieId = Guid.NewGuid(),
-                UserMovieName = username,
+                UserName = username,
                 UserEmail = "smx.test@smx.com",
                 UserCity = "Skopje",
                 UserCountry = "Macedonia",

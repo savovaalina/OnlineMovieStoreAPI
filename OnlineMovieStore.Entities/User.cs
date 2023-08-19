@@ -8,7 +8,7 @@
 		public Guid MovieId { get; set; }
 
 		[StringLength(250)]
-		public string UserMovieName { get; set; } = null!;
+		public string UserName { get; set; } = null!;
 
 		[StringLength(350)]
 		public string? UserEmail { get; set; }
