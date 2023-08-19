@@ -11,7 +11,7 @@
         [StringLength (90)]
         public string Genre { get; set; } = null!; //zhanr
 
-        public string LastUpdate { get; set; } //najnov dodaden film
+        public string? LastUpdate { get; set; } //najnov dodaden film
 
 
 		//TODO: Relation with other tabeles-> Tuka ke ja praime relacijata podocna

@@ -14,7 +14,7 @@
 		[StringLength(250)]
 		public string MovieName { get; set; } = null!;
 
-		public string MovePart { get; set; }
+		public string? MovePart { get; set; }
 		public int MovieLength { get; set; }
 
 		public int MovieRating { get; set; }
@@ -24,13 +24,13 @@
 		public DateTime MovieYearOfRelease { get; set; }  // godina na izdavenje
 
 		[StringLength(100)]
-		public string MovieDirector { get; set; }
+		public string? MovieDirector { get; set; }
 
 		[StringLength(100)]
-		public string MovieProducer { get; set; }
+		public string? MovieProducer { get; set; }
 
 		[StringLength(250)]
-		public string MovieActors { get; set; }
+		public string? MovieActors { get; set; }
 		
 		[StringLength(450)]
 		public string? MovieDescription { get; set; }

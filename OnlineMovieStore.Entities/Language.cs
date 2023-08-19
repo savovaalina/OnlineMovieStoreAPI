@@ -11,7 +11,7 @@ namespace OnlineMovieStore.Entities
 
         public int WebLanguageId { get; set; }
 
-        public string WebLanguageName { get; set; }
+        public string? WebLanguageName { get; set; }
 
 
     }

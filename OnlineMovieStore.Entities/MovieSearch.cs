@@ -12,10 +12,10 @@ namespace OnlineMovieStore.Entities
         public int SearchId { get; set; }
         
         [StringLength (450)]
-        public string MovieGenre { get; set; }
+        public string? MovieGenre { get; set; }
 
-		[StringLength (450)]
-		public string MovieName { get; set;}
+        [StringLength(450)]
+        public string MovieName { get; set; } = null!;
 
         public bool MovieIsPopular { get; set;}
 

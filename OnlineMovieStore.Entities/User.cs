@@ -11,7 +11,7 @@
 		public string UserName { get; set; } = null!;
 
 		[StringLength(350)]
-		public string UserEmail { get; set; }
+		public string? UserEmail { get; set; }
 
 		[StringLength(350)]
 		public string? UserAdress { get; set; }
@@ -20,7 +20,7 @@
 		public string? UserCountry { get; set; }
 
 		[StringLength(150)]
-		public string UserCity { get; set; }
+		public string? UserCity { get; set; }
 
 		public byte[] PasswordHash { get; set; } = null!; //vaka e poso se enkriptira vo arrey od byte
 

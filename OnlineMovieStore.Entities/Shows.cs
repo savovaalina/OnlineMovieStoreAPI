@@ -19,7 +19,7 @@ namespace OnlineMovieStore.Entities
 		public string? ShowDescription { get; set; }
 
 		[StringLength(150)]
-		public string ShowType { get; set; }
+		public string? ShowType { get; set; }
 
 	}
 }
