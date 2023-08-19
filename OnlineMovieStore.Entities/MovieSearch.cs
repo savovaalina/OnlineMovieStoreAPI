@@ -9,13 +9,13 @@ namespace OnlineMovieStore.Entities
 {
     public class MovieSearch
     {
-        public int SearchId { get; set; }
+        public int SearchMovieId { get; set; }
         
         [StringLength (450)]
         public string? MovieGenre { get; set; }
 
         [StringLength(450)]
-        public string MovieName { get; set; } = null!;
+        public string MovieMovieName { get; set; } = null!;
 
         public bool MovieIsPopular { get; set;}
 

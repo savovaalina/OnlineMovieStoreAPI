@@ -10,10 +10,10 @@ namespace OnlineMovieStore.Entities
 	public class Shows
 	{
 
-		public int ShowId { get; set; }
+		public int ShowMovieId { get; set; }
 
 		[StringLength(250)]
-		public string ShowName { get; set; } = null!;
+		public string ShowMovieName { get; set; } = null!;
 
 		[StringLength(450)]
 		public string? ShowDescription { get; set; }

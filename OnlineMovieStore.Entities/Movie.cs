@@ -42,7 +42,7 @@
 		#region Category Details
 		public string? CategoryGenre{ get; set; }
 
-		public int CategoryId { get; set; }
+		public int CategoryMovieId { get; set; }
 
 		public MovieCategory? Category { get; set; }
 		#endregion

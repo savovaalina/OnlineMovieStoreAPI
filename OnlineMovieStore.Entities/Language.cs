@@ -9,9 +9,9 @@ namespace OnlineMovieStore.Entities
     public class WebLanguage
     {
 
-        public int WebLanguageId { get; set; }
+        public int WebLanguageMovieId { get; set; }
 
-        public string? WebLanguageName { get; set; }
+        public string? WebLanguageMovieName { get; set; }
 
 
     }

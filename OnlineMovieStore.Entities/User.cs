@@ -5,10 +5,10 @@
 
 	public class User
 	{
-		public Guid Id { get; set; }
+		public Guid MovieId { get; set; }
 
 		[StringLength(250)]
-		public string UserName { get; set; } = null!;
+		public string UserMovieName { get; set; } = null!;
 
 		[StringLength(350)]
 		public string? UserEmail { get; set; }

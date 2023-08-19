@@ -9,7 +9,7 @@ namespace OnlineMovieStore.Entities
     public class Login
     {
 
-        public int LoginId { get; set; }
+        public int LoginMovieId { get; set; }
 
         public string LoginUsername { get; set; } = null!;
 

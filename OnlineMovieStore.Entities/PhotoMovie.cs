@@ -10,7 +10,7 @@ namespace OnlineMovieStore.Entities
     public class PhotoMovie
     {
         [Key]
-        public int PhotoId { get; set; }
+        public int PhotoMovieId { get; set; }
 
 		[StringLength(450)]
 		public string Url { get; set; } = null!; // Ova ke ni kazuva kaj se naoga slikata
